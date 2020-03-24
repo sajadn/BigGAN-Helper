@@ -450,7 +450,8 @@ class G_D(nn.Module):
                     return D_out
 
 
-def get_config(resolution):
+def get_config():
+  resolution=256
   attn_dict = {128: '64', 256: '128', 512: '64'}
   dim_z_dict = {128: 120, 256: 140, 512: 128}
   config = {'G_param': 'SN', 'D_param': 'SN',
